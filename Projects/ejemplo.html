@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+    
+    <body>
+        <!-- El formulario usa un controlador de eventos onsubmit para llamar a la función results ().
+            La palabra clave return asegura que el valor devuelto por results () determinará si se envía el formulario.
+    <form onsubmit="event.preventDefault(); result();">
+        <h2>Escribe un nombre</h2>
+        <input id="name" type="text" name="name" />
+        
+    <h2>Tienes un email</h2>
+    <label><input type="checkbox" id="cbox1" value="first_checkbox"> SI</label><br>
+    <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">NO</label>
+    
+    <h3>Te gusta mi pagina web</h3>
+    
+    <input id="poll1" type="radio" name="website_poll" value="me_encanta"> Me encanta<br />
+    
+    <input id="poll2" type="radio" name="website_poll" value="sin_comentarios"> ni fu ni fa<br />
+    
+    <input id="poll3" type="radio" name="website_poll" value="la_odio">La odio<br />
+    
+    <h3>Deja un comentario</h3>
+    
+    <textarea id="comments" name="comments" rows="6" colls="40">Aqui tu mensaje</textarea>
+    <br />
+    <br />
+    
+    <button type="submit" onclick="result">Envia tu informacion</button>
+</form>
+  <script>
+    function result() {
+      //Las variables son iguales a lo que escriba el usuario como respuesta a nuestro formulario. 
+      //llamamos al nombre de identificación que creó en el paso anterior y le tomamos el valor.
+      var name = document.getElementById('name').value;
+      // var email = document.getElementById('email').value;
+
+      if (document.getElementById('poll1').checked) {
+        poll = document.getElementById('poll1').value;
+      } else if (document.getElementById('poll2').checked) {
+        poll = document.getElementById('poll2').value;
+      } else {
+          poll = document.getElementById('poll3').value;
+        }
+
+        var comments = document.getElementById('comments').value;
+        
+        document.write("Gracias por participar ");
+        
+        document.write(name + "<br/>");
+        // document.write(email + "<br/>");
+        document.write(poll + "<br/>");
+        document.write(comments + "<br/>");
+        return false;
+    }
+</script>
+
+<input id="entrada" onkeyup="escribir2()">
+<div id="cont3"></div>
+<script>
+function escribir2() {
+valor = document.getElementById('entrada').value;
+document.getElementById('cont3').textContent =' '+valor;} 
+</script>-->
+
+<p id="cont4">Texto existente</p>
+<button type="button" onclick="agregartxt1()">Agregar texto</button><br>
+<script>
+
+let ejem = ". Esto es un nuevo parrafo agregado con appendChild()"
+let cont4 = document.getElementById("cont4")
+function agregartxt1(){                
+var text = document.createTextNode(ejem);                                    
+cont4.appendChild(text); 
+}                            
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+.juego{
+    text-align: center;
+    font-style: italic;
+}
+
+.wait{
+    text-align: center;
+    font-size: 30px;
+    animation: spin 1.5s linear infinite;
+}
+
+/* rotates clockwise indefinitely */
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+/* visibility hidden means the item is still there and taking up space
+   but just not shown. display: none doesn't take up space */
+   
+   .info-bar{
+       visibility: hidden;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .show {
+     visibility: visible;
+   }
+    /*init*/
+
+  .correct {
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  .close {
+    background-color: goldenrod;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: #888;
+    color: white; 
+  }
+  
+  .invalid {
+    animation: flash 1s;
+  }
+  
+  /* flashes red border and then fades back to gray */
+  @keyframes flash {
+    5% {
+      border-color: crimson;
+    }
+  
+    100% {
+      border-color: #ccc;
+    }
+  }
+
+
+  /*end*/
+  
+.full{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+    max-width: 295px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.cuadro{
+    border-color: rgb(139, 137, 137);
+    border-style: solid;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 11px rgb(0 0 0 / 0.2);
+}
+
+.cuadro:hover{
+    background-color: rgb(207, 232, 232);
+    cursor: grab;
+}
+
+/* winner animation */
+
+@keyframes rainbow {
+    100%,
+    0% {
+      color: rgb(255, 0, 0);
+    }
+    8% {
+      color: rgb(255, 127, 0);
+    }
+    16% {
+      color: rgb(255, 255, 0);
+    }
+    25% {
+      color: rgb(127, 255, 0);
+    }
+    33% {
+      color: rgb(0, 255, 0);
+    }
+    41% {
+      color: rgb(0, 255, 127);
+    }
+    50% {
+      color: rgb(0, 255, 255);
+    }
+    58% {
+      color: rgb(0, 127, 255);
+    }
+    66% {
+      color: rgb(0, 0, 255);
+    }
+    75% {
+      color: rgb(127, 0, 255);
+    }
+    83% {
+      color: rgb(255, 0, 255);
+    }
+    91% {
+      color: rgb(255, 0, 127);
+    }
+  }
+  
+  .winner {
+    animation: rainbow 4s infinite linear;
+  }

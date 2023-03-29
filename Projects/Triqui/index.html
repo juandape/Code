@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <h2>A fun game...</h2>
+    <section class="player-name">
+        <div class="p1">
+        <label for="name">Player X name: </label>
+        <input id="name1" onkeypress ="agregar()"/>
+        </div>
+        <div class="p2">
+            <label for="name">Player O name: </label>
+            <input id="name2" onkeypress ="agregar2()"/>
+            </div>
+    </section>
+    <div class="players">
+        <p class="j1">Player <span class="p1-symbol"> X </span>: <span class="p1-name"></span> </p>
+        <p class="j2">Player <span class="p2-symbol"> O </span>: <span class="p2-name"></span> </p>
+    </div>
+</header>
+<div class="board">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+</div>
+
+
+
+<script src="tictactoe.js"></script>
+</body>
+</html>

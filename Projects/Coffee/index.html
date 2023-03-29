@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cofee Masters</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="./coffee_masters_logo.png" alt="logo coffee" class="logo" />
+      <h1 class="title">Coffee Masters</h1>
+    </nav>
+    <div class="full">
+      <div class="cuadro-items">
+        <h4 class="titulo-cuadro">ITEMS</h4>
+        <div class="item">
+          <div class="items-cant">1x</div>
+          <div class="items-prod">Cappucino</div>
+          <div class="items-price">$6.00</div>
+          <ul class="item-opt">
+            <li>light Foam</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="items-cant">1x</div>
+          <div class="items-prod">Cappucino</div>
+          <div class="items-price">$7.90</div>
+          <ul class="item-opt">
+            <li>Almond Milk</li>
+            <li>Doble Espresso Shot</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="items-cant">1x</div>
+          <div class="items-prod">Croissant_</div>
+          <div class="items-price">$5.37</div>
+          <ul class="item-opt">
+            <li>Butter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="name-payment">
+        <div class="name-insert">
+          <h4 class="titulo-cuadro">NAME</h4>
+          <label for="name" class="name-label">Name for Order</label>
+          <input type="text" class="name-input" placeholder="Name" />
+        </div>
+        <div class="payment">
+          <h4 class="titulo-cuadro">PAYMENT</h4>
+          <div class="card-insert">
+            <label for="card" class="name-label">Card Number</label>
+            <input
+              type="number"
+              class="name-input"
+              placeholder="credit card number"
+            />
+          </div>
+
+          <div class="ccv-insert">
+            <label for="ccv" class="name-label">CCV Number</label>
+            <input type="number" class="name-input" placeholder="CCV" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resumen">
+      <table>
+        <tbody>
+          <tr>
+            <td>Subtotal:</td>
+            <td>$19.27</td>
+          </tr>
+          <tr>
+            <td>Tax:</td>
+            <td>$0.96</td>
+          </tr>
+          <tr class="total">
+            <td>Total:</td>
+            <td>$20.23</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button>Place Order</button>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+  background-color: antiquewhite;}
+
+.tituloppal{
+    color: red;
+    font-size: 50px;
+    font-family: monospace;
+    align-items: center;
+    text-align: center;
+}
+
+.parrafo{
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.hiper{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    
+}
+.hiper:hover{
+    color: rgb(152, 98, 18);
+}
+
+.pajaros{
+    border-radius: 25%;   
+}
+.listao{
+    font-weight: bold;
+}
+.listano{
+    font-style: italic;
+    color: gray;
+}
+
+ol{
+    background-color: yellow;
+    max-width: 25%;
+}
+ul{
+    background-color: black;
+    color: white;
+    max-width: 25%;
+}
+
+.lnor{
+    color: red;
+}
+
+.encabezado{
+    font-weight: bold;
+}
+
+table, tr, td, th{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+form{
+    background-color: aqua;
+    border: 2px solid green;
+    max-width: 30%;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuadrito{
+    border: 1px solid rgb(7, 103, 7);
+}
+.cuadrote{
+    border: 2px solid red;
+    max-width: 35%;
+    padding: 20px 25px 50px 25px;
+}
+
+.goma{
+    margin-top: -15px;
+}
+.encabezado{
+    max-width: 40%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    font-weight: bold;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+
+.bartender{
+    max-width: 40%;
+    margin-bottom: 0;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.footer{
+    text-align: center;
+    max-width: 40%;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -5px;
+}
+
+.postitulo{
+    border: 2px dotted blue;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 310px;
+    left: 400px;
+    width: 250px;
+    padding: 10px 5px 10px 5px;
+    box-shadow: 15px 15px 30px 10px rgb(97, 92, 92);
+    text-shadow: 1px 5px 15px rgb(157, 62, 78);
+}
+
+.cabeza{
+    background-color: aquamarine;
+    max-width: 250px;
+    height: 250px;
+    position: relative;
+    box-shadow: 10px 10px 15px 1px rgb(97, 92, 92);
+}
+.ojo{
+    background-color: chocolate;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.iris{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 25px; 
+}
+.boca{
+    background-color: rosybrown;
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+.cuerpo{
+    background: linear-gradient(black, gray, rgb(255, 206, 127));
+    max-width: 180px;
+    height: 300px;
+    position: relative; 
+    box-shadow: 10px 10px 15px 1px rgb(97, 92, 92);
+    
+}
+.mano{
+    background-color: red;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    right: -60px;
+    top: 90px;
+    box-shadow: 10px 10px 15px 1px rgb(97, 92, 92);
+}
+
+.c1{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(13, 13, 62);
+    color: white;
+    text-align: center;
+}
+.c1h1{
+    padding-top: 35px;
+}
+.c2{
+    width: 400px;
+    height: 80px;
+    text-align: center;
+}
+.c3{
+    width: 400px;
+    height: 190px;
+    background-color: rgb(13, 13, 62);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div > a{
+    color: red;
+}
+
+.gradient{
+    height: 5px;
+    background: linear-gradient(to right, yellow, blue, red);
+    margin-top: 20px;  
+}
+
+.estilos{
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px){
+    .estilos{
+        background-color: brown;
+        width: 350px;
+    }
+}
+
+
+@media (min-width: 992px){
+    .estilos{
+        background-color: rgb(165, 42, 136);
+        width: 400px;
+    }
+}
+
+@media (min-width: 1200px){
+    .estilos{
+        background-color: rgb(212, 234, 22);
+        width: 450px;
+    }
+}
